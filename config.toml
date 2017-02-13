@@ -1,0 +1,10 @@
+title = "Matt Potok"
+baseurl = "http://mattpotok.com/"
+languageCode = "en-us"
+theme = "ocean-night"
+
+[author]
+    name = "Matt Potok"
+
+[params]
+    description = "Personal website"
