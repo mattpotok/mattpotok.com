@@ -3,9 +3,7 @@
 
 <main>
     <div id="content">
-        {{ range first 10 (where .Data.Pages "Type" "post") }}
-            {{ .Render "summary" }}
-        {{ end }}
+        Posts page
     </div>
 </main>
 

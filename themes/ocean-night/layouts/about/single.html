@@ -3,10 +3,10 @@
 
 <main>
     <div id="content">
-        {{ range first 10 (where .Data.Pages "Type" "post") }}
-            {{ .Render "summary" }}
-        {{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ .Type }}
     </div>
 </main>
 
 {{ partial "footer.html" . }}
+
