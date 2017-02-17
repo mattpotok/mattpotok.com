@@ -1,6 +1,13 @@
-<article class="summary">
-    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-    {{ .Date.Format "Mon, Jan 2, 2006" }}
+<div class="post-summary">
+    <!--Move this a back to the header location -->
+    <a href="{{ .Permalink }}">
+        <div class="content">
+            <div class="header">
+                <h2>{{ .Title }}</h2>
+                {{ .Date.Format "Mon, Jan 2, 2006" }}
+            </div>
 
-    {{ .Summary }}
-</article>
+            {{ .Summary }}
+        </div>
+    </a>
+</div>

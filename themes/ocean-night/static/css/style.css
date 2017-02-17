@@ -16,8 +16,7 @@ body {
 }
 
 a {
-    color: #83BBE6;
-    text-decoration: none
+    text-decoration: none;
 }
 
 /*****************
@@ -54,9 +53,13 @@ footer {
     width: 50.000em;
 }
 
-#navbar-logo {
+.bar a {
     color: #83BBE6;
-    font-size: 2.500em;
+    text-decoration: none
+}
+
+#navbar h1 {
+    color: #83BBE6;
 }
 
 #navbar ul {
@@ -65,9 +68,8 @@ footer {
 
 #navbar li {
     display: inline-block;
-    font-size: 1.500em;
+    font-size: 1.250em;
     padding-left: 1.000em;
-    padding-bottom: 0.125em;
 }
 
 .github-logo {
@@ -78,8 +80,6 @@ footer {
 
 #footbar p {
     color: #F7FCFF;
-    display: inline-block;
-    font-size: 1.000em;
 }
 
 /********
@@ -90,4 +90,40 @@ footer {
     margin: auto;
 }
 
-article 
+/*********
+ * Posts *
+ *********/
+.post-summary .content{
+    border-bottom: 1px #000 solid;
+    padding-bottom: 0.250em;
+}
+
+.post-summary a:visited {
+    color: black;
+}
+
+.post-summary .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.post-summary .header h2 {
+    color: #83BBE6;
+}
+
+.post-year {
+    border-bottom: 1px #000 solid;
+}
+
+.post-year h2 {
+    margin-bottom: 0.250em;
+}
+
+.post-year li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.250em;
+    padding-left: 1.000em;
+}

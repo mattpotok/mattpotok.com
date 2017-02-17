@@ -3,7 +3,16 @@
 
 <main>
     <div id="content">
-        Posts page
+        {{ range .Data.Pages.GroupByDate "2006" }}
+        <div class="post-year">
+            <h2>{{ .Key }}</h2>
+                <ul>
+                    {{ range (where .Pages "Type" "post") }}
+                        {{ .Render "li" }}
+                    {{ end }}
+                </ul>
+        </div>
+        {{ end }}
     </div>
 </main>
 
