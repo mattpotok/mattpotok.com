@@ -2,7 +2,7 @@
 {{ partial "navbar.html" . }}
 
 <main>
-    <div id="content">
+    <div class="article">
         {{ range .Data.Pages.GroupByDate "2006" }}
         <div class="post-year">
             <h2>{{ .Key }}</h2>

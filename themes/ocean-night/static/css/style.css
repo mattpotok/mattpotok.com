@@ -7,15 +7,22 @@
     border: 0;
 }
 
-html, body {
+html {
     height: 100%;
 }
 
 body {
     background-color: #F7FCFF;
+    min-height: 100%;
+    position: relative;
 }
 
-a {
+main {
+    padding-bottom: 4.125em;
+}
+
+a, a:visited {
+    color: #83BBE6;
     text-decoration: none;
 }
 
@@ -41,8 +48,8 @@ header {
 }
 
 footer {
-    position: absolute;
     bottom: 0;
+    position: absolute;
 }
 
 .bar {
@@ -82,34 +89,27 @@ footer {
     color: #F7FCFF;
 }
 
-/********
- * Main *
- ********/
-#content {
-    max-width: 50.000em;
+/***********
+ * Article *
+ ***********/
+.article {
     margin: auto;
+    max-width: 50.000em;
 }
 
 /*********
  * Posts *
  *********/
-.post-summary .content{
+.post-summary {
     border-bottom: 1px #000 solid;
+    margin-bottom: 1.000em;
     padding-bottom: 0.250em;
-}
-
-.post-summary a:visited {
-    color: black;
 }
 
 .post-summary .header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-.post-summary .header h2 {
-    color: #83BBE6;
 }
 
 .post-year {
@@ -126,4 +126,25 @@ footer {
     align-items: flex-end;
     margin-bottom: 0.250em;
     padding-left: 1.000em;
+}
+
+/**********
+ * Single *
+ **********/
+.single .header {
+    text-align: center;
+    margin-bottom: 1.250em;
+}
+
+.single .content h1,
+.single .content h2,
+.single .content h3,
+.single .content h4,
+.single .content h5,
+.single .content h6,
+.single .content p, 
+.single .content table,
+.single .content ol,
+.single .content ul {
+    margin-bottom: 1.000em;
 }

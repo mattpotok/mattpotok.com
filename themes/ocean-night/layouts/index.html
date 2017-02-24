@@ -2,7 +2,7 @@
 {{ partial "navbar.html" . }}
 
 <main>
-    <div id="content">
+    <div class="article">
         {{ range first 10 (where .Data.Pages "Type" "post") }}
             {{ .Render "summary" }}
         {{ end }}

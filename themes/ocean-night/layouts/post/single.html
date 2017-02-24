@@ -1,12 +1,19 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
-<main>
-    <div id="content">
-        <h1>{{ .Title }}</h1>
-        {{ .Content }}
-        {{ .Type }}
-    </div>
-</main>
+    <main>
+        <div class="article">
+            <div class="single">
+                <div class="header">
+                    <h1>{{ .Title }}</h1>
+                    {{ .Date.Format "Mon, Jan 2, 2006" }}
+                </div>
+
+                <div class="content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </main>
 
 {{ partial "footer.html" . }}
