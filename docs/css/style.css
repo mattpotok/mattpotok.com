@@ -1,0 +1,150 @@
+/*********
+ * Reset *
+ *********/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #F7FCFF;
+    min-height: 100%;
+    position: relative;
+}
+
+main {
+    padding-bottom: 4.125em;
+}
+
+a, a:visited {
+    color: #83BBE6;
+    text-decoration: none;
+}
+
+/*****************
+ * Header/Footer *
+ *****************/
+
+/* Colors:
+ * #4078c0
+ * #83bbe6
+ * #C4E5FF
+ */
+
+header, footer {
+    background-color: #1E2327;
+    padding-top: 0.750em;
+    padding-bottom: 0.750em;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 2.000em;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+    width: 50.000em;
+}
+
+.bar a {
+    color: #83BBE6;
+    text-decoration: none
+}
+
+#navbar h1 {
+    color: #83BBE6;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar li {
+    display: inline-block;
+    font-size: 1.250em;
+    padding-left: 1.000em;
+}
+
+.github-logo {
+    display: inline-block;
+    fill: currentColor;
+    vertical-align: text-top;
+}
+
+#footbar p {
+    color: #F7FCFF;
+}
+
+/***********
+ * Article *
+ ***********/
+.article {
+    margin: auto;
+    max-width: 50.000em;
+}
+
+/*********
+ * Posts *
+ *********/
+.post-summary {
+    border-bottom: 1px #000 solid;
+    margin-bottom: 1.000em;
+    padding-bottom: 0.250em;
+}
+
+.post-summary .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.post-year {
+    border-bottom: 1px #000 solid;
+}
+
+.post-year h2 {
+    margin-bottom: 0.250em;
+}
+
+.post-year li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.250em;
+    padding-left: 1.000em;
+}
+
+/**********
+ * Single *
+ **********/
+.single .header {
+    text-align: center;
+    margin-bottom: 1.250em;
+}
+
+.single .content h1,
+.single .content h2,
+.single .content h3,
+.single .content h4,
+.single .content h5,
+.single .content h6,
+.single .content p, 
+.single .content table,
+.single .content ol,
+.single .content ul {
+    margin-bottom: 1.000em;
+}

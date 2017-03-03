@@ -2,6 +2,7 @@ title = "Matt Potok"
 baseurl = "http://mattpotok.com/"
 languageCode = "en-us"
 theme = "ocean-night"
+publishDir = "docs"
 
 [author]
     name = "Matt Potok"
