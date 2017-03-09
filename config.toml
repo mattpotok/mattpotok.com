@@ -9,3 +9,8 @@ publishDir = "docs"
 
 [params]
     description = "Personal website"
+    
+    facebook = "https://www.facebook.com/matt.potok.5"
+    github = "https://github.com/mattpotok"
+    linkedin = "https://www.linkedin.com/in/matthew-potok/"
+    youtube = "https://www.youtube.com/mattpotok"

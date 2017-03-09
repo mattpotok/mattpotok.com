@@ -1,13 +1,36 @@
         <footer>
             <div id="footbar" class="bar">
                 <div>
-                    <a href="https://github.com/mattpotok" target="_blank">
-                        <svg class="github-logo" height="20" width="20">
-                           <image x="0" y="0" height="20" width="20" xlink:href="images/mark-github.svg"/>
-                        </svg>
-                    </a>
+                    {{ if isset .Site.Params "facebook" }}
+                        <a href={{ index .Site.Params "facebook" }} target="_blank">
+                            <svg class="footer-logo" height="20" width="20">
+                                <image x="0" y="0" height="20" width="20"
+                                       xlink:href="images/social/logo-facebook.svg"/>
+                        </a>
+                    {{ end }}
+                    {{ if isset .Site.Params "github" }}
+                        <a href={{ index .Site.Params "github" }} target="_blank">
+                            <svg class="footer-logo" height="20" width="20">
+                                <image x="0" y="0" height="20" width="20"
+                                       xlink:href="images/social/logo-github.svg"/>
+                        </a>
+                    {{ end }}
+                    {{ if isset .Site.Params "linkedin" }}
+                        <a href={{ index .Site.Params "linkedin" }} target="_blank">
+                            <svg class="footer-logo" height="20" width="20">
+                                <image x="0" y="0" height="20" width="20"
+                                       xlink:href="images/social/logo-linkedin.svg"/>
+                        </a>
+                    {{ end }}
+                    {{ if isset .Site.Params "youtube" }}
+                        <a href={{ index .Site.Params "youtube" }} target="_blank">
+                        <svg class="footer-logo" height="20" width="20">
+                            <image x="0" y="0" height="20" width="20"
+                                   xlink:href="images/social/logo-youtube.svg"/>
+                        </a>
+                    {{ end }}
                 </div>
-                <p>©&nbsp;2017 Matt Potok. Powered by 
+                <p>©&nbsp;2017 {{ index .Site.Author "name" }}. Powered by 
                     <a href="http://gohugo.io" target="_blank">Hugo</a></p>
             </div>
         </footer>
